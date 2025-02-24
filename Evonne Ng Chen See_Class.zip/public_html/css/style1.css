@@ -1,0 +1,512 @@
+@media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0; }}
+
+.video-background {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+#index {
+    overflow: hidden;
+}
+
+
+.video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.mx-auto h1 {
+    font-family: 'Lalezar', cursive;
+    color:white;
+    font-size:100pt;
+    text-align:center;
+    margin-top:-44%;
+    margin-left: -5%;
+}
+
+.mx-auto{
+    margin-left: 2%;
+}
+
+.mx-auto h3 {
+    font-family: 'Playfair Display', serif;
+    color:white;
+    font-size:30pt;
+    text-align:center;
+    margin-left: -5%;
+    margin-top:-11%;
+    font-weight: 200;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    width: 100%;
+    height:600px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }}
+
+.logo{
+    float: right;
+      position: relative;
+      margin-top: 40px;
+      display: block;
+      height: 70px;
+      width:200px;
+      margin-right:-7%;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    background-size: cover;
+}
+
+#column h5 {
+    font-color:white;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h5 {
+    text-align: center;
+    color:white;
+    margin-top:50px;
+   font-family: 'Playfair Display', serif;  
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+body{
+    background-color:black;
+}
+
+audio {
+	visibility: hidden;
+}
+
+audio {
+    	width: 2px;
+    	height: 2px;
+}
+
+body {
+    font-family: 'Lalezar', cursive;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.column1 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 300px;
+        margin-top:50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.parallax-contact{
+    /* The image used */
+    background-image:url(../image/fade.png) ;
+    max-width: 100%;
+    max-height: 100%;  
+    width: 100%;
+
+    /* Set a specific height */
+    min-height: 580px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+iframe{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.Social a {
+  
+    font-size:10px;
+    width:20%;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-top:21px;
+    font-family: 'Lalezar', cursive;
+    color:#C7C3B1;
+    margin-left:20px;
+
+}
+/*footer*/
+footer {
+	height:110px;
+	width:1200px;
+	background-color: black;
+	
+}
+
+footer div {
+	color:#C7C3B1;
+	float:left;	
+	width:26%;
+	padding-left: 88px;
+	height: 110px;	
+	font-family: 'Lalezar', cursive;
+}
+
+footer div h6 {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 20px 20px 20px 25px;
+}
+
+footer div p, footer div i {
+	margin-left: 25px;
+	margin-top:7px;
+	font-size:12px;
+}
+
+footer div i {
+	margin-top:0px;
+}
+
+footer div p span {
+	font-weight: 900;
+}
+
+.copyright {
+	background-color:black;	
+	height: 20px;
+	width:1200px;
+	    clear: both;
+           
+}
+.copyright h6 {
+	background-color:black;	
+	font-size: 8px;
+	color:#665F60;
+	padding-bottom:5px;
+	text-align:center;
+	font-family: 'Playfair Display', serif;
+         padding-top:50px;
+}
+
+.maintab {
+    width:70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#outbreak p {
+    color:white;
+}
+
+#result p {
+    color:white;
+}
+
+#fact p {
+    color:white;
+}
+
+#textbox h3 {
+ font-size: 25pt;
+font-family: 'Playfair Display', serif;
+}
+
+.textbox {
+    margin-left: 20%;
+    width:80%;
+    display: table;
+    margin-top: -10%;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.article-gallery {
+    display: block;
+    margin-left: 5%;
+    width: 1350px;
+}
+
+.titlegallery p{
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    margin-left: 140px;
+}
+.article-gallery .gallery{
+    display: inline-block;
+    width: 450px;
+    float: left;
+    margin-bottom: 6%;
+}
+
+
+.article-gallery div iframe{
+    width: 400px;
+    height: 250px;
+}
+
+.article-gallery div:hover{
+    transform: scale(1.2,1.2);   
+    opacity: 0.7;
+}
+
+.section1 p {
+    color:white;
+}
+
+.cover-heading {
+    color:white;
+}
+
+.parallax-contact1{
+    /* The image used */
+    background-image:url(../image/fade.jpg) ;
+    max-width: 100%;
+    max-height: 100%;  
+    width: 100%;
+
+    /* Set a specific height */
+    min-height: 580px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textbox1 {
+    margin-left: 15%;
+    width:80%;
+    display: table;
+    margin-top: -35%;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+

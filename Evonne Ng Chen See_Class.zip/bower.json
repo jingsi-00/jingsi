@@ -1,0 +1,12 @@
+{
+    "name": "Evonne_Ng_Chen_See_Class.zip",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc", "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
